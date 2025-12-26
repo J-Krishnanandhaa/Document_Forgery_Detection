@@ -1,2 +1,3 @@
 # Document_Forgery_Detection
-Deep-learning pipeline for detecting and localizing forged regions in documents
+
+A machine learning project to detect forged or tampered documents using image processing and deep learning techniques. Built by a 4-member team.
