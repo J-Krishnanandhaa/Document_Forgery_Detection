@@ -81,17 +81,68 @@ DocTamper Dataset: https://github.com/qcf-568/DocTamper
 
 ## Project Structure
 
-    ├── data/
-    ├── models/
-    ├── src/
-    │   ├── preprocessing/
-    │   ├── segmentation/
-    │   ├── feature_extraction/
-    │   ├── classification/
-    ├── train.py
-    ├── predict.py
-    ├── requirements.txt
-    └── README.md
+
+```
+Document-Forgery-Detection/
+│
+├── frontend/
+│   └── app.py
+│
+├── docs/
+│
+├── scripts/
+│   ├── evaluate.py
+│   ├── evaluate_full_testingset.py
+│   ├── export_model.py
+│   ├── inference_pipeline.py
+│   ├── run_inference.py
+│   ├── setup.py
+│   ├── train_chunked.py
+│   └── train_classifier_doctamper_fixed.py
+│
+├── src/
+│   ├── config/
+│   │   ├── __init__.py
+│   │   └── config_loader.py
+│   │
+│   ├── data/
+│   │   ├── __init__.py
+│   │   ├── augmentation.py
+│   │   ├── datasets.py
+│   │   └── preprocessing.py
+│   │
+│   ├── features/
+│   │   ├── __init__.py
+│   │   ├── feature_extraction.py
+│   │   └── region_extraction.py
+│   │
+│   ├── inference/
+│   │   ├── __init__.py
+│   │   └── pipeline.py
+│   │
+│   ├── models/
+│   │   ├── __init__.py
+│   │   ├── encoder.py
+│   │   ├── decoder.py
+│   │   ├── network.py
+│   │   └── losses.py
+│   │
+│   ├── training/
+│   │   ├── __init__.py
+│   │   ├── classifier.py
+│   │   ├── trainer.py
+│   │   └── metrics.py
+│   │
+│   └── utils/
+│       └── __init__.py
+│
+├── training_content/
+│
+├── .gitignore
+├── README.md
+```
+
+
 
 ---
 
